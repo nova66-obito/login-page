@@ -1,0 +1,163 @@
+/* this for the login page */
+
+:root
+{
+    --bg:#101820;
+    --sec:#FEE715;
+}
+main{
+    min-height: 100vh;
+    color:white;
+    background:#FEE715;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 40px;
+}
+.login{
+    padding: 20px;
+    width: 350px;
+    min-height:350px;
+    background:#101820;
+    z-index: 1;
+    position: relative;
+    border-radius:20% / 40%;
+    box-shadow: 2px -2px 5px black;
+
+}
+.login::after{
+    position: absolute;
+    content: "";
+    width: 30%;
+    height: 20%;
+    background:var(--bg);
+    top:0;
+    left: 0;
+    z-index: -1;
+    transform: skewy(50deg);
+}
+.login::before{
+    position: absolute;
+    content: "";
+    width: 30%;
+    height: 20%;
+    background:var(--bg);
+    top:0;
+    right: 0;
+    z-index: -1;
+    transform: skewy(-50deg);
+}
+.value{
+    position: relative;
+}
+.value > p{
+    margin-bottom: 0;
+    margin-top: 3px;
+    color: red;
+}
+.value input{
+    width: 100%;
+    padding: 6px;
+    outline: none;
+    background: transparent;
+    border:2px solid white;
+    border-radius: 5px;
+    margin-top:15px ;
+    color: white;
+}
+form  h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+label{
+    position:absolute;
+    top: 0;
+    left: 10px;
+    font-size: 14px;
+    padding: 1px;
+    transition: all 0.3s;
+    background:#101820;
+}
+.lab , .lab{
+    top:23px;
+}
+.value input:focus ~ .lab {
+    top: 3px;
+}
+.top {
+    position: absolute;
+    top: 3px;
+}
+.icon{
+    position: absolute;
+    top:20px;
+    right: 10px;
+}
+.f-btn2 > button{
+    padding: 5px 20px;
+    border: none;
+    color:var(--bg);
+    font-weight: bolder;
+    text-transform: capitalize;
+    border-radius: 30px;
+    box-shadow: 0px 2px 0px rgb(249, 245, 245);
+    background:var(--sec);
+}
+.f-btn2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f-btn{
+    display:flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    flex-direction: column;
+}
+.link{ 
+    flex-direction: column;
+    display: flex;
+    gap:5px
+}
+.link  a{
+    color: white;
+    text-decoration: none;
+}
+.link a:hover{
+    text-decoration: underline;
+    color: var(--sec);
+}
+.success{
+    width: 300px;
+    height: 100px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 3px 2px 4px black;
+    animation: do 1s ease-in forwards;
+}
+@keyframes do {
+    from{
+        scale: 0;
+        opacity: 0;
+    }
+    to{
+        scale:1.1;
+        opacity: 1;
+    }
+}
+/* this for the phone */
+@media screen and (max-width:500px) and (min-width:300px) {
+    .login{
+      width: 90%;
+    }
+    .success{
+        width: 230px;
+    }
+}

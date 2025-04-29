@@ -1,0 +1,22 @@
+/* this for the sign in page */
+.sign-in{
+    width: 400px;
+    min-height: 450px;
+    background: var(--bg);
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    border-radius: 10% / 30%; 
+    transform: translateY(30px);
+}
+.btn-c{
+    min-height:50px;
+}
+
+@media screen and (max-width:500px) and (min-width:300px) {
+    .sign-in{
+        width: 85%;
+    }
+}
