@@ -40,12 +40,7 @@ export default function Sign() {
             setpassError("password require...!")
             valid = false
         }
-
-        if (!confrom.trim()) {
-            setconformError("conformpassword require...!")
-            valid = false
-        }
-
+          console.log(valid)
         // this for the final validation
 
         if (valid) {

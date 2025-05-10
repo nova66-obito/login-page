@@ -42,7 +42,7 @@ export default function Cart() {
             <h2>login success...😊</h2>
          </div> : 
            <form className="login" action="#" onSubmit={handleSubmit}>
-           <h1 className="text-center">login</h1>
+           <h1>login</h1>
            <div className="value">
              <input
                value={name} 
@@ -63,12 +63,12 @@ export default function Cart() {
              <label className={`lab ${p_word ? "top" : ""}`} htmlFor="password">enter your password*</label>
               {passError && <p>password required..!</p>}
              <div className="icon eye">
-               {pass ? <FaRegEye onClick={passwordvisiblity} style={{ fontSize: "25px", cursor: "pointer" }} />
-                 : <FaRegEyeSlash onClick={passwordvisiblity} style={{ fontSize: "25px", cursor: "pointer" }} />}
+               {pass ? <FaRegEye onClick={passwordvisiblity} style={{ fontSize: "20px", cursor: "pointer" }} />
+                 : <FaRegEyeSlash onClick={passwordvisiblity} style={{ fontSize: "20px", cursor: "pointer" }} />}
              </div>
            </div>
            <div className="f-btn">
-             <div className="f-btn2 d-flex gap-3">
+             <div className="f-btn2">
                <button >login</button>
                <button>guest</button>
              </div>
